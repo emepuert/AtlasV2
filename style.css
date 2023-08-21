@@ -1,0 +1,91 @@
+#map {
+position: relative;
+}
+
+.image1 {
+width: 100%;
+height: 100%;
+z-index: 1; /* Placez l'image en-dessous du SVG */
+}
+
+.image2 {
+display: none;
+}
+  
+svg {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 2; /* Placez le SVG au-dessus de l'image */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.13);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+#maison,
+#Activites,
+#AnciensTravaux,
+#Fac,
+#Sig,
+#OldJob,
+#Nege,
+#Contact,
+#Texte {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 1s ease;
+}
+
+#maison.active,
+#Activites.active,
+#AnciensTravaux.active,
+#Fac.active,
+#Sig.active,
+#OldJob.active,
+#Nege.active,
+#Contact.active,
+#Texte.active {
+    opacity: 1;
+    transform: translateY(0);
+    animation: moveUp 1s ease forwards;
+}
+
+@keyframes moveUp {
+    to {
+        transform: translateY(0);
+    }
+}
+
+.clignotement {
+animation: blink 1s infinite;
+opacity: 1; /* Opacité par défaut */
+}
+
+.clignotement.hovered {
+animation: none; /* Annule l'animation de clignotement au survol */
+opacity: 1; /* Définit l'opacité à 1 au survol */
+}
+  
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
