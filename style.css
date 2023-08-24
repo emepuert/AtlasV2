@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@600&family=Questrial&display=swap');
 @font-face {
     font-family: warung;
-    src: url(/fonts/warung.ttf);
+    src: url(fonts/warung.ttf);
 }
 
 @font-face {
     font-family: pixel;
-    src: url(/fonts/pixel.ttf);
+    src: url(fonts/pixel.ttf);
 }
 
 
@@ -92,7 +92,7 @@ z-index: 2; /* Placez le SVG au-dessus de l'image */
     padding: 0.5rem 1rem;
     background-color: #000000;
     border-radius: 2px;
-    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
 }
 }
 
@@ -124,6 +124,11 @@ z-index: 2; /* Placez le SVG au-dessus de l'image */
     list-style: none;
     box-shadow: 0 0 0 black;
     transition: all 0.2s;
+}
+
+.modal a{
+    text-decoration: none;
+    color: black;
 }
 
 .modal li:last-child {
@@ -397,7 +402,7 @@ opacity: 1; /* Définit l'opacité à 1 au survol */
     width: 55%;
     height: 3vh;
     background: black;
-    animation: slide3 2s ease-in-out;
+    animation: slide3 2s ease-in-out;    
 }
 
 @media (max-width: 1366px) {
@@ -441,6 +446,12 @@ opacity: 1; /* Définit l'opacité à 1 au survol */
     animation: slide3 2s ease-in-out;
 }
 .flex img {
+  height: 16px;
+  width: auto;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.modal li img{
   height: 16px;
   width: auto;
   padding-left: 1%;

@@ -63,6 +63,11 @@ document.addEventListener("DOMContentLoaded", function() {
                         <h1>Personal Projects</h1>
                         <p>Below are some achievements from my education as well as some personal projects.</p>
                         <iframe class="content" id="pdfFrame" src="${pdfSrc}" frameborder="0" width="100%" height="100%"></iframe>
+                        <ul>
+                            <li><a href="https://view.genial.ly/61d3b5138502620dee9ec37e/presentation-audit-nancy">Walk Study - Mobility FR</li>
+                            <li><a href="https://view.genial.ly/61b986c7599d3a0dec0d9c48/presentation-projet-danimation-du-psm">Green Space Study - Urbanism FR</li>
+                            <li><a href="https://view.genial.ly/60a52c8b7bc8690d5d225530/presentation-innondations">Flood Study - Climatology FR</li>
+                        </ul>
                     </div>
                 `);
                 // Attendre un court instant pour s'assurer que l'iframe est insérée dans le DOM
