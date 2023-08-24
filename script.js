@@ -255,3 +255,11 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+document.getElementById("scrollButton").addEventListener("click", function() {
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: "smooth" // Pour une animation fluide
+    });
+  });
+  
