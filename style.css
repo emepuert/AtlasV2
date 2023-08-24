@@ -447,8 +447,8 @@ opacity: 1; /* Définit l'opacité à 1 au survol */
   padding-right: 1%;
 }
 .modal li img{
-  height: 3%;
-  width: 3%;
+  height: 16px;
+  width: auto;
   padding-left: 1%;
   padding-right: 1%;
 }
