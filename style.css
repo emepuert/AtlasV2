@@ -401,12 +401,50 @@ opacity: 1; /* Définit l'opacité à 1 au survol */
 }
 
 @media (max-width: 1366px) {
-  .inside1,.inside2,.inside3,.inside4,.inside5 {
-    border-radius: 30%;
+  .inside1 {
+    border-radius: 20px;
     width: 90%;
     height: 1vh;
     background: rgb(0, 0, 0);
     animation: slide1 2s ease-in-out;
+}
+
+.inside2 {
+    border-radius: 20px;
+    width: 80%;
+    height: 1vh;
+    background: black;
+    animation: slide2 2s ease-in-out;
+}
+
+.inside3 {
+    border-radius: 20px;
+    width: 55%;
+    height: 1vh;
+    background: black;
+    animation: slide3 2s ease-in-out;
+}
+
+.inside4 {
+    border-radius: 20px;
+    width: 55%;
+    height: 1vh;
+    background: black;
+    animation: slide3 2s ease-in-out;
+}
+
+.inside5 {
+    border-radius: 20px;
+    width: 55%;
+    height: 1vh;
+    background: black;
+    animation: slide3 2s ease-in-out;
+}
+.flex img {
+  height: 16px;
+  width: auto;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 }
 
