@@ -1346,9 +1346,13 @@
               fill: #605c71;
             }
             .cls-1111 {
-              fill: #fff;
+              fill: #ffffff; /* Assurez-vous que la couleur par défaut est correcte */
+              transition: fill 0.3s ease; /* Ajoutez une transition pour une animation fluide */
             }
-      
+            
+            .cls-1111:hover {
+              fill: #ffe600; /* Remplacez "nouvelle-couleur" par la couleur que vous souhaitez lors du survol */
+            }
             .cls-2222 {
               mix-blend-mode: multiply;
             }
