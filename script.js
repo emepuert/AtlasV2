@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <h1>Personal Projects</h1>
                         <p>Below are some achievements from my education as well as some personal projects.</p>
                         <iframe class="content" id="pdfFrame" src="${pdfSrc}" frameborder="0" width="100%" height="100%"></iframe>
-                        <ul>
+                        <ul class="liste2">
                             <li><a href="https://view.genial.ly/61d3b5138502620dee9ec37e/presentation-audit-nancy">Walk Study - Mobility FR</li>
                             <li><a href="https://view.genial.ly/61b986c7599d3a0dec0d9c48/presentation-projet-danimation-du-psm">Green Space Study - Urbanism FR</li>
                             <li><a href="https://view.genial.ly/60a52c8b7bc8690d5d225530/presentation-innondations">Flood Study - Climatology FR</li>
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 setTimeout(function() {
                     pdfFrame = document.getElementById("pdfFrame"); // Correction ici
                 }, 10);
-            } else if (sigGroup.id === "maison") {
+            } else if (sigGroup.id === "maison" || sigGroup.id === "HOBBIES")  {
                 openPopup(`
                             <div class="container">
                             <h1>Hobbies</h1>
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>
                         </div>
                     `);
-            } else if (sigGroup.id === "Fac") {
+            } else if (sigGroup.id === "Fac" || sigGroup.id === "FORMATION") {
                 openPopup(`
                     <div class="container">
                     <h1>My Educational Journey</h1>
@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     </ul>
                 </div>
                 `);
-            } else if (sigGroup.id === "Nege") {
+            } else if (sigGroup.id === "Nege" || sigGroup.id === "ACTUALJOB") {
                 openPopup(`
                         <div class="container">
                         <h1>My Experience in a Consultancy Firm</h1>
@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         </ul>
                     </div>
                 `);  
-            } else if (sigGroup.id === "OldJob") {
+            } else if (sigGroup.id === "OldJob" || sigGroup.id === "PASTJOB") {
                 openPopup(`
                         <div class="container">
                         <h1>My Professional Experiences</h1>
@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         </ul>
                     </div>
                 `);
-            } else if (sigGroup.id === "Sig") {
+            } else if (sigGroup.id === "Sig" || sigGroup.id === "GIS") {
                 openPopup(`
                         <div class="container">
                         <h1>My GIS Skills</h1>
@@ -191,7 +191,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         </ul>
                     </div>
                 `);                 
-            } else if (sigGroup.id === "Contact") {
+            } else if (sigGroup.id === "Contact" || sigGroup.id === "CONTACT") {
                 openPopup(`
                         <div class="container">
                         <h1>About Me</h1>
