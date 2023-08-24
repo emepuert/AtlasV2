@@ -92,7 +92,7 @@ z-index: 2; /* Placez le SVG au-dessus de l'image */
     padding: 0.5rem 1rem;
     background-color: #000000;
     border-radius: 2px;
-    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
 }
 }
 
@@ -397,7 +397,7 @@ opacity: 1; /* Définit l'opacité à 1 au survol */
     width: 55%;
     height: 3vh;
     background: black;
-    animation: slide3 2s ease-in-out;
+    animation: slide3 2s ease-in-out;    
 }
 
 @media (max-width: 1366px) {
@@ -443,6 +443,12 @@ opacity: 1; /* Définit l'opacité à 1 au survol */
 .flex img {
   height: 16px;
   width: auto;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.modal li img{
+  height: 3%;
+  width: 3%;
   padding-left: 1%;
   padding-right: 1%;
 }
