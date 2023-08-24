@@ -1,9 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@600&family=Questrial&display=swap');
+@font-face {
+    font-family: warung;
+    src: url(/fonts/warung.ttf);
+}
+
+@font-face {
+    font-family: pixel;
+    src: url(/fonts/pixel.ttf);
+}
+
 
 body{
     margin: 0;
     padding: 0;
-    margin-top: -1px;
+
 }
 
 #map {
@@ -49,46 +60,85 @@ z-index: 2; /* Placez le SVG au-dessus de l'image */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #f6f6fcdc;
+    background-color: #ffffff;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
     z-index: 5;
-    border-radius: 20px;
+    border-radius: 5px;
     overflow: auto; /* Ajoutez un défilement en cas de dépassement de taille */
+    border: 3px solid black;
 }
 
 
 .modal p{
-    color: #3e45a3;
-    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    font-family: 'Questrial', sans-serif;
 }
 
 .modal h1{
     color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    background-color: #3e45a3;
-    padding-left: 5%;
-    padding-right: 5%;
-    border-radius: 20px;
+    font-family: pixel;
+    padding: 0.5rem 1rem;
+    background-color: #000000;
+    border-radius: 2px;
+    box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .modal h2{
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    background-color: #3e45a3;
-    padding-left: 5%;
-    padding-right: 5%;
-    border-radius: 20px;
+    color: #000000;
+    font-family: 'Questrial', sans-serif;
+    padding: 0.3rem 3.4rem;
+    text-align: center;
+    background-color: white;
 }
 
 .modal h3{
-    color: #3e45a3;
-    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    font-family: 'Questrial', sans-serif;
+}
+
+.modal ul{
+    padding: 0;
+    width: 100%;
 }
 
 .modal li{
-    color: #3e45a3;
-    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    font-family: 'Questrial', sans-serif;
+    border: 2px solid black;
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 1%;
+    list-style: none;
+    box-shadow: 0 0 0 black;
+    transition: all 0.2s;
+}
+
+.modal li:last-child {
+    margin: 0;
+  }
+  
+  .modal li:hover {
+    box-shadow: 0.4rem 0.4rem 0 black;
+    transform: translate(-0.4rem, -0.4rem);
+  }
+  
+  .modal li:active {
+    box-shadow: 0 0 0 black;
+    transform: translate(0, 0);
+  }
+
+.modal li img{
+    height: 2%;
+    width: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+iframe{
+    height: 50vh;
+    width: 100%;
+    border: 3px solid black;
 }
 
 @media (max-width: 767px) {
@@ -97,21 +147,42 @@ z-index: 2; /* Placez le SVG au-dessus de l'image */
     .modal h2,
     .modal h3,
     .modal li {
-        font-size: 2vw; /* Ajustez cette valeur en fonction de vos préférences */
+        font-size: 1.7vw; /* Ajustez cette valeur en fonction de vos préférences */
     }
 }
 
-#content{
-    height: 100%;
-}
 
 #switchButton {
     position: fixed;
-    top: 10px; /* Ajustez cette valeur pour définir la distance depuis le haut */
-    left: 10px; /* Ajustez cette valeur pour définir la distance depuis la gauche */
+    top: 20px; /* Ajustez cette valeur pour définir la distance depuis le haut */
+    left: 20px; /* Ajustez cette valeur pour définir la distance depuis la gauche */
     z-index: 3; /* Placez le bouton au-dessus du reste du contenu */
+    color: #000000;
+    font-family: 'Questrial', sans-serif;
+    border: 2px solid black;
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 0.5vw 1vw;
+    list-style: none;
+    box-shadow: 0 0 0 black;
+    transition: all 0.2s;
+    border-radius: 5px;
 }
 
+#switchButton:last-child {
+    margin: 0;
+  }
+  
+  #switchButton:hover {
+    box-shadow: 0.4rem 0.4rem 0 black;
+    transform: translate(-0.4rem, -0.4rem);
+    background-color: #ffe600;
+  }
+  
+  #switchButton:active {
+    box-shadow: 0 0 0 black;
+    transform: translate(0, 0);
+  }
 
 #maison,
 #Activites,
@@ -181,30 +252,98 @@ opacity: 1; /* Définit l'opacité à 1 au survol */
     align-items: center;
 }
 
-.container p{
-    margin-bottom: 20px;
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
+
+.circle {
+    width: 50px; /* Adjust the size of the circle */
+    height: 50px; /* Adjust the size of the circle */
+    border: 2px solid black; /* Black border */
+    border-radius: 50%; /* Create a circle */
+    background-color: white; /* White background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px; /* Adjust the spacing between circles */
+    text-decoration: none; /* Remove underline for links */
+    color: black;
+}
+
+.circle img {
+    max-width: 60%; /* Adjust the size of the image within the circle */
+    max-height: 60%; /* Adjust the size of the image within the circle */
+}
+
+.circle:last-child {
+    margin: 0;
+  }
+  
+  .circle:hover {
+    box-shadow: 0.4rem 0.4rem 0 black;
+    transform: translate(-0.4rem, -0.4rem);
+  }
+  
+  .circle:active {
+    box-shadow: 0 0 0 black;
+    transform: translate(0, 0);
+  }
+
+.modal li img{
+    height: 2%;
+    width: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.contacticon {
+    max-width: 60%; /* Adjust the size of the image within the circle */
+    max-height: 60%; /* Adjust the size of the image within the circle */
+}
+
+
 
 .flex {
     display: flex;
     align-items: center;
+    border: 2px solid black;
+    margin-bottom: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.flex img {
+    height: 2%;
+    width: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 .bar {
     width: 30vw;
     height: 3vh;
-    border: 1px solid blanchedalmond;
+    border: 1px solid rgb(0, 0, 0);
     margin: 0 30px;
     border-radius: 20px;
     display: flex;
     align-items: center;
 }
 
+.skill {
+    height: 16px;
+    width: 70px;
+    font-weight: 1000;
+}
+
 .inside1 {
     border-radius: 30px;
     width: 90%;
     height: 3vh;
-    background: blanchedalmond;
+    background: rgb(0, 0, 0);
     animation: slide1 2s ease-in-out;
 }
 
@@ -212,7 +351,7 @@ opacity: 1; /* Définit l'opacité à 1 au survol */
     border-radius: 30px;
     width: 80%;
     height: 3vh;
-    background: blanchedalmond;
+    background: black;
     animation: slide2 2s ease-in-out;
 }
 
@@ -220,7 +359,7 @@ opacity: 1; /* Définit l'opacité à 1 au survol */
     border-radius: 30px;
     width: 55%;
     height: 3vh;
-    background: blanchedalmond;
+    background: black;
     animation: slide3 2s ease-in-out;
 }
 
@@ -228,7 +367,7 @@ opacity: 1; /* Définit l'opacité à 1 au survol */
     border-radius: 30px;
     width: 55%;
     height: 3vh;
-    background: blanchedalmond;
+    background: black;
     animation: slide3 2s ease-in-out;
 }
 
@@ -236,7 +375,7 @@ opacity: 1; /* Définit l'opacité à 1 au survol */
     border-radius: 30px;
     width: 55%;
     height: 3vh;
-    background: blanchedalmond;
+    background: black;
     animation: slide3 2s ease-in-out;
 }
 
