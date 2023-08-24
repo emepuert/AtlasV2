@@ -7,8 +7,27 @@
     <title>My Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <script src="loading.js"></script>
   </head>
   <body>
+    <div>
+      <div id="loading">
+          <p class="text-loading">"CHARGEMENT"</p>
+          <div id="compass">
+              <div id="bezel"></div>
+              <div id="NWSE" class="quad"></div>
+              <div id="NESW" class="quad"></div>
+              <div id="NS" class="quad"></div>
+              <div id="WE" class="quad"></div>
+              <span id="N" class="dir">N</span>
+              <span id="E" class="dir">E</span>
+              <span id="S" class="dir">S</span>
+              <span id="W" class="dir">W</span>
+              <div id="needle"></div>
+              <div id="axis"></div>
+          </div>
+      </div>
+  </div>
     <div id="map">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080.43">
         <defs>
