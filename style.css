@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@600&family=Questrial&display=swap');
 @font-face {
     font-family: warung;
-    src: url(/fonts/warung.ttf);
+    src: url(fonts/warung.ttf);
 }
 
 @font-face {
     font-family: pixel;
-    src: url(/fonts/pixel.ttf);
+    src: url(fonts/pixel.ttf);
 }
 
 
