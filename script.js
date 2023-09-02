@@ -195,15 +195,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 openPopup(`
                         <div class="container">
                         <h1>About Me</h1>
-                        <p>Hello, I'm Dawa Tran Quang-Tru, and I currently call Nancy, France, my home. My journey begins with Vietnamese roots, and at 24 years old, I find myself fueled by a genuine passion for science and the environment. This enthusiasm has been kindled within me by my family's generations-long engagement with these realms. Growing up, discussions about scientific breakthroughs and environmental issues were commonplace at the dinner table, igniting my curiosity from a young age.
+                        <p>Hi, I'm Dawa Tran Quang-Tru, and I currently live in Nancy, France. I have Vietnamese roots and I'm 24 years old. I really love science and the environment. My family has been interested in these things for generations, so I've always been curious about them.
                         <br><br>
-                        My personality strikes a balance between tranquility and sociability. I'm often drawn to moments of quiet reflection, allowing me to delve into the depths of various subjects. Yet, when in social settings, I thrive on meaningful conversations and the opportunity to connect with diverse individuals.
+                        I'm kind of quiet but also like talking to people. I enjoy thinking about stuff on my own, but I also like having good conversations with different people.
                         <br><br>
-                        One of my favorite pastimes is indulging in the world of gastronomy. The tantalizing flavors of Italian cuisine and the rich tapestry of Middle Eastern dishes have a special place in my heart. These culinary experiences become more than just meals; they're journeys that mirror my quest for understanding and exploration.
+                        I really enjoy trying different foods. I love the taste of Italian food and Middle Eastern dishes. Eating these foods feels like going on a journey, just like when I learn new things.
                         <br><br>
-                        In addition to my passion for science and the environment, I have developed a strong command of the English language. I can confidently communicate and engage in discussions in English. Furthermore, I have a basic understanding of Spanish, allowing me to connect with even more people and cultures.
+                        I'm good at English, so I can talk and have conversations easily. I also know a bit of Spanish, which helps me connect with more people and cultures.
                         <br><br>
-                        As I embark on the journey of sharing my experiences and capabilities, this portfolio emerges as a conduit to not only introduce myself but also to showcase the skills I've honed over the years. It's a platform where my passion for science, my appreciation for the environment, and my love for learning find a unified voice</p>
+                        I'm starting to share my experiences and skills, and this portfolio is a way for me to show what I'm good at. It's a place where my love for science, nature, and learning can be heard.</p>
                             <div class="image-container">
                             <a href="https://www.linkedin.com/in/dawa-tran-645a60231/" target="_blank" class="circle">
                                 <img src="img/icon/linkedin.png" alt="LinkedIn" />
