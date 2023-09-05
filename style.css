@@ -398,10 +398,10 @@ opacity: 1; /* Définit l'opacité à 1 au survol */
 
 .inside1 {
     border-radius: 30px;
-    width: 90%;
+    width: 60%;
     height: 3vh;
     background: rgb(0, 0, 0);
-    animation: slide1 2s ease-in-out;
+    animation: slide1 2s linear;
 }
 
 .inside2 {
@@ -414,7 +414,7 @@ opacity: 1; /* Définit l'opacité à 1 au survol */
 
 .inside3 {
     border-radius: 30px;
-    width: 55%;
+    width: 30%;
     height: 3vh;
     background: black;
     animation: slide3 2s ease-in-out;
@@ -422,24 +422,24 @@ opacity: 1; /* Définit l'opacité à 1 au survol */
 
 .inside4 {
     border-radius: 30px;
-    width: 55%;
+    width: 40%;
     height: 3vh;
     background: black;
-    animation: slide3 2s ease-in-out;
+    animation: slide4 2s ease-in-out;
 }
 
 .inside5 {
     border-radius: 30px;
-    width: 55%;
+    width: 60%;
     height: 3vh;
     background: black;
-    animation: slide3 2s ease-in-out;    
+    animation: slide5 2s ease-in-out;    
 }
 
 @media (max-width: 1366px) {
   .inside1 {
     border-radius: 20px;
-    width: 90%;
+    width: 60%;
     height: 1vh;
     background: rgb(0, 0, 0);
     animation: slide1 2s ease-in-out;
@@ -455,7 +455,7 @@ opacity: 1; /* Définit l'opacité à 1 au survol */
 
 .inside3 {
     border-radius: 20px;
-    width: 55%;
+    width: 30%;
     height: 1vh;
     background: black;
     animation: slide3 2s ease-in-out;
@@ -463,18 +463,18 @@ opacity: 1; /* Définit l'opacité à 1 au survol */
 
 .inside4 {
     border-radius: 20px;
-    width: 55%;
+    width: 40%;
     height: 1vh;
     background: black;
-    animation: slide3 2s ease-in-out;
+    animation: slide4 2s ease-in-out;
 }
 
 .inside5 {
     border-radius: 20px;
-    width: 55%;
+    width: 60%;
     height: 1vh;
     background: black;
-    animation: slide3 2s ease-in-out;
+    animation: slide5 2s ease-in-out;
 }
 .flex img {
   height: 16px;
@@ -496,7 +496,7 @@ opacity: 1; /* Définit l'opacité à 1 au survol */
         width: 0;
     }
     to {
-        width: 90%;
+        width: 60%;
     }
 }
 
@@ -514,9 +514,28 @@ opacity: 1; /* Définit l'opacité à 1 au survol */
         width: 0;
     }
     to {
-        width: 55%;
+        width: 30%;
     }
 }
+
+@keyframes slide4 {
+  from {
+      width: 0;
+  }
+  to {
+      width: 40%;
+  }
+}
+
+@keyframes slide5 {
+  from {
+      width: 0;
+  }
+  to {
+      width: 60%;
+  }
+}
+
 
 /*---Loading---*/
 
