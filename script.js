@@ -61,13 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 openPopup(`
                     <div class="popup-content">
                         <h1>Personal Projects</h1>
-                        <p>Below are some achievements from my education as well as some personal projects.</p>
-                        <iframe class="content" id="pdfFrame" src="${pdfSrc}" frameborder="0" width="100%" height="100%"></iframe>
-                        <ul class="liste2">
-                            <li><img src="img/icon/interactive.png" alt="Image" class="clique" /><a href="https://view.genial.ly/61d3b5138502620dee9ec37e/presentation-audit-nancy">Walk Study - Mobility FR</li>
-                            <li><img src="img/icon/interactive.png" alt="Image" class="clique" /><a href="https://view.genial.ly/61b986c7599d3a0dec0d9c48/presentation-projet-danimation-du-psm">Green Space Study - Urbanism FR</li>
-                            <li><img src="img/icon/interactive.png" alt="Image" class="clique" /><a href="https://view.genial.ly/60a52c8b7bc8690d5d225530/presentation-innondations">Flood Study - Climatology FR</li>
-                        </ul>
+                        <p>Work In Progress</p>
                     </div>
                 `);
                 // Attendre un court instant pour s'assurer que l'iframe est insérée dans le DOM
@@ -125,6 +119,22 @@ document.addEventListener("DOMContentLoaded", function() {
                                 </div>
                                 <p>60%</p>
                             </div>
+                            <div class="flex">
+                                <img src="img/icon/fme.png" alt="Image" />
+                                <p class="skill">SQL :</p>
+                                <div class="bar">
+                                    <div class="inside6"></div>
+                                </div>
+                                <p>40%</p>
+                            </div>
+                            <div class="flex">
+                                <img src="img/icon/sql.png" alt="Image" />
+                                <p class="skill">FME :</p>
+                                <div class="bar">
+                                    <div class="inside7"></div>
+                                </div>
+                                <p>75%</p>
+                            </div>
                         </div>
                     `);
             } else if (sigGroup.id === "Fac" || sigGroup.id === "FORMATION") {
@@ -141,7 +151,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <li><strong>2017 - 2018:</strong> Faculty of Sciences and Technology in Vandoeuvre-lès-Nancy - Year 1 in Physics-Chemistry, SPI Mechanics Civil Engineering (Initial Training) (FST)</li>
                         <li><strong>2018 - 2021:</strong> SHS Nancy - Bachelor's Degree in Geography and Urban Planning</li>
                         <li><strong>2021 - 2023:</strong> SHS Nancy - Master's Degree in Geography and Urban Planning (Transition, Conversion, Planning track)</li>
-                        <li><strong>2022 - 2023:</strong> SHS Nancy and NEGE - Pursuing Master's Degree in apprenticeship within NEGE consultancy firm</li>
+                        <li><strong>2023 - 2024:</strong> CYU Cergy-Pontoise - Master's Degree in Geomatics applied to urban risks</li>
                     </ul>
                 </div>
                 `);

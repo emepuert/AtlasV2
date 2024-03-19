@@ -436,6 +436,22 @@ opacity: 1; /* Définit l'opacité à 1 au survol */
     animation: slide5 2s ease-in-out;    
 }
 
+.inside6 {
+  border-radius: 30px;
+  width: 40%;
+  height: 3vh;
+  background: black;
+  animation: slide6 2s ease-in-out;    
+}
+
+.inside7 {
+  border-radius: 30px;
+  width: 75%;
+  height: 3vh;
+  background: black;
+  animation: slide7 2s ease-in-out;    
+}
+
 @media (max-width: 1366px) {
   .inside1 {
     border-radius: 20px;
@@ -476,6 +492,23 @@ opacity: 1; /* Définit l'opacité à 1 au survol */
     background: black;
     animation: slide5 2s ease-in-out;
 }
+
+.inside6 {
+  border-radius: 20px;
+  width: 40%;
+  height: 1vh;
+  background: black;
+  animation: slide6 2s ease-in-out;
+}
+
+.inside7 {
+  border-radius: 20px;
+  width: 75%;
+  height: 1vh;
+  background: black;
+  animation: slide7 2s ease-in-out;
+}
+
 .flex img {
   height: 16px;
   width: auto;
@@ -534,6 +567,27 @@ opacity: 1; /* Définit l'opacité à 1 au survol */
   to {
       width: 60%;
   }
+ 
+}
+
+@keyframes slide6 {
+  from {
+      width: 0;
+  }
+  to {
+      width: 40%;
+  }
+ 
+}
+
+@keyframes slide7 {
+  from {
+      width: 0;
+  }
+  to {
+      width: 75%;
+  }
+ 
 }
 
 
